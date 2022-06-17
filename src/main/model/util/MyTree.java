@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.TreeMap;
 
-import src.main.model.util.interfaces.INodable;
+import src.main.model.interfaces.INodable;
 
 public class MyTree<T extends Comparable<T>,G extends INodable<T,G>>{
 

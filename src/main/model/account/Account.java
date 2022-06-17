@@ -5,7 +5,7 @@ import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 import java.util.Objects;
 
-import src.main.model.util.interfaces.IIdentifiable;
+import src.main.model.interfaces.IIdentifiable;
 
 public abstract class Account implements IIdentifiable<String>{
     private AccountType type;

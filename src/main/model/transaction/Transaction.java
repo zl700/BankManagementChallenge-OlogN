@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Objects;
 
-import src.main.model.util.interfaces.INodable;
+import src.main.model.interfaces.INodable;
 
 //Since Transaction is finally stored in a hashSet.
 //It must have a good implementation of hashCode() and equals()

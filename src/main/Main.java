@@ -1,8 +1,5 @@
 package src.main;
 
-import java.time.Duration;
-import java.time.Instant;
-
 import src.main.model.Bank;
 import src.main.model.util.InOut;
 

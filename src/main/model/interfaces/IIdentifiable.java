@@ -1,4 +1,4 @@
-package src.main.model.util.interfaces;
+package src.main.model.interfaces;
 
 public interface IIdentifiable<T extends Comparable<T>>{
     public T getIdentifier();
