@@ -73,4 +73,29 @@ public class Chequing extends Account implements Taxable{
 
         return sb.toString();
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        long temp;
+        temp = Double.doubleToLongBits(income);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Chequing other = (Chequing) obj;
+        if (Double.doubleToLongBits(income) != Double.doubleToLongBits(other.income))
+            return false;
+        return true;
+    }
+    
 }
